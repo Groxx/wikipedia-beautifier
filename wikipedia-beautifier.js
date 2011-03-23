@@ -33,8 +33,6 @@ function wiknifier()
         {
             if(parentDiv(elements[i]) == bodyContent)
             {
-                elements[i].className += (elements[i].className ? " " : "") + "hyphenate";
-                elements[i].style.textAlign = "justify";
                 elements[i].style.marginBottom = margin;
             }
         }
@@ -42,8 +40,6 @@ function wiknifier()
 
     paragraphAdjuster(bodyContent.getElementsByTagName("p"), "1.0em");
     paragraphAdjuster(bodyContent.getElementsByTagName("li"), "0.5em");
-
-    Hyphenator.run();
 
     var amboxes = document.getElementsByClassName("ambox");
 
