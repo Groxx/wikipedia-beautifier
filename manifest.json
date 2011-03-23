@@ -5,7 +5,7 @@
   "content_scripts": [
       {
           "matches": [ "http://*.wikipedia.org/wiki/*" ],
-          "js": [ "hyphenator.js", "wikipedia-beautifier.js" ],
+          "js": [ "wikipedia-beautifier.js" ],
           "run_at": "document_end"
       }
   ]
